@@ -1,4 +1,4 @@
-# Google STT/Dialogflow CX connector code
+# Google STT/Dialogflow CX Connector
 
 You can use this STT/Dialogflow CX connector code to connect a Vonage Voice API call to a Dialogflow CX (DF CX) agent and then have an audio conversation with the agent. Caller's queries and agent's responses transcripts are posted back to the Vonage Voice API application.
 
