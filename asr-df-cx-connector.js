@@ -21,6 +21,8 @@ const reqHeaders = {
     'Accept': 'application/json'
 };
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
+
 //-- Google Speech-to-Text
 const speech = require('@google-cloud/speech');
 
@@ -41,6 +43,18 @@ const sampleRateHertz = 16000; // NEVER modify
 
 // const dfCxEncoding = 'AUDIO_ENCODING_LINEAR_16'; // NEVER modify
 const outputEncoding = 'OUTPUT_AUDIO_ENCODING_LINEAR_16'; // NEVER modify
+
+//----------------------------------------------------
+
+// ---- CORS policy - update to your requirements ----
+
+// app.use(function (req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   res.header("Access-Control-Allow-Methods", "OPTIONS,GET,POST,PUT,DELETE");
+//   res.header("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+//   next();
+// });
 
 //----------------------------------------------------
 

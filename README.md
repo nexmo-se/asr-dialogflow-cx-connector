@@ -6,7 +6,7 @@ You can use this STT/Dialogflow CX connector code to connect a Vonage Voice API 
 
 STT/Dialogflow CX connector makes use of the [WebSockets feature](https://developer.vonage.com/en/voice/voice-api/concepts/websockets) of Vonage Voice API. When a voice call is established, a Voice API application triggers a WebSocket connection to this Dialogflow connector and streams the audio to and from the voice call in real time.
 
-See https://github.com/nexmo-se/asr-dialogflow-cx-voice-application for a **sample Voice API application** using this connector code to connect voice calls to a DF CX agent.
+See https://github.com/nexmo-se/dialogflow-cx-voice-application for a **sample Voice API application** using this connector code to connect voice calls to a DF CX agent.
 
 ## Transcripts
 
