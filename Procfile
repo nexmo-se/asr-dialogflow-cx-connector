@@ -1,1 +1,1 @@
-web: node ./asr-df-cx-server.js
+web: node ./asr-df-cx-connector.js
