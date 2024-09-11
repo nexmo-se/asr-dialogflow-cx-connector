@@ -103,7 +103,7 @@ npm install
 
 Launch the applicatiom:
 ```bash
-node asr-df-cx-connecting-server
+node asr-df-cx-connector-server
 ```
 
 ### Command Line Heroku deployment
