@@ -21,12 +21,13 @@ const reqHeaders = {
     'Accept': 'application/json'
 };
 
-//--
+//------- this server port ------
+//VCR_PORT: port when deployed on Vonage Cloud Run Time 
+const port = process.env.VCR_PORT || process.env.PORT || 6000;
 
 // Only if needed - For self-signed certificate in chain - In test environment
 // Do not uncomment next line in production environment
-
-// process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
 //-- Google Speech-to-Text
 const speech = require('@google-cloud/speech');
@@ -288,7 +289,12 @@ app.ws('/socket', async (ws, req) => {
   })
 });
 
+//--- For Vonage Cloud Runtine deployment ---
+
+app.get('/_/health', async (req, res) => {
+  res.sendStatus(200);
+});
+
 //-------------
 
-const port = process.env.PORT || 6000;
 app.listen(port, () => console.log(`Connecting server application listening on port ${port}!`))
