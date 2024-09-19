@@ -8,6 +8,10 @@ STT/Dialogflow CX connector makes use of the [WebSockets feature](https://develo
 
 See https://github.com/nexmo-se/dialogflow-cx-voice-application for a **sample Voice API application** using this connector code to connect voice calls to a DF CX agent.
 
+## Voice responses
+
+This connector code will send back the DF CX agent's Text-to-Speech (TTS) voice responses over the same WebSocket in the other direction for the voice user to hear.
+
 ## Transcripts
 
 This connector code will send caller's speech transcript, and Dialogflow agent's response transcript to the Voice API application via webhook calls.

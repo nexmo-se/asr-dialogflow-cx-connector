@@ -21,7 +21,12 @@ const reqHeaders = {
     'Accept': 'application/json'
 };
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
+//--
+
+// Only if needed - For self-signed certificate in chain - In test environment
+// Do not uncomment next line in production environment
+
+// process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
 //-- Google Speech-to-Text
 const speech = require('@google-cloud/speech');
